@@ -1,0 +1,24 @@
+h1{
+    font-style:italic;
+    text-align: center; 
+}
+
+body{
+    
+}
+
+h2{
+    font-weight:bolder;
+} 
+
+footer{
+    position:absolute;
+	bottom:0;
+	width:100%;
+    text-align: center;
+    font-weight:bolder;
+}
+
+.field{
+    text-align: center;
+}
