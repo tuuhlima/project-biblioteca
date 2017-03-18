@@ -1,7 +1,7 @@
 
 h1{
-    text-align: center;
-    color:whitesmoke;  
+    margin-left: 345px;
+    color:whitesmoke;
 }
 
 body{
@@ -23,6 +23,7 @@ body{
 h2{
     font-weight:bolder;
     color: whitesmoke;
+    padding:15px;  
 } 
 
 .container footer{
@@ -34,8 +35,7 @@ h2{
 
 .container{
     max-width: 250px;
-    text-align: center;
-    margin:auto;
+    margin-left:345px;
 }
 
 .container input[type="submit"]{
