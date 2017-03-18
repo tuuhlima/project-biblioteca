@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    font-family:sans-serif; 
+    width:100%;
+    height:100%;
+    background:#eee;
+    background-image: url(biblioteca3.png);
+    background-repeat:no-repeat;
+    background-size:1370px 670px;
+    margin-right: 0px;
+    margin-left: 0px;     
+}
+
+.field{
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.field footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-weight:bolder;
+}
+
+.field input[type="email"],
+.field input[type="text"],
+.field input[type="password"]{
+    padding: 10px;
+    width:90%;
+    font-size:14px; 
+}
+
+.field legend{
+    font-size:16px;
+    font-weight:bold; 
+}
+
+.field input[type="submit"]{
+    padding:12px;
+    width: 100%;
+    font-size:16px;  
+}
+
+p,a,label{
+    color: whitesmoke;
+}

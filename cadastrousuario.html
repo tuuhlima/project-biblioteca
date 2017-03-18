@@ -2,34 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dados cadastrais</title>
+    <title>Criar nova conta</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
     <h1>Criar uma nova conta!</h1>
-    <h3>É gratuito aproveite!</h3>
+    <h2>É gratuito aproveite!</h2>
     <form method="get" action="C:\xampp\htdocs\biblioteca\conta.php">
-        <fieldset>
+        <fieldset class="field">
             <legend>Informações Cadastrais</legend><br>
-            <label for="name">Nome:</label>
-            <input type="text" size="15" maxlength="15" placeholder="nome completo" name="v"/><br><br>
-            <label for="email">Email:</label>
-            <input type="email" size="25" maxlength="25" placeholder="email@exemplo"><br><br>
-            <label for="password">Senha:</label>
-            <input type="password" size="10" maxlength="8" placeholder="8 digitos"><br><br>
-            <label for="conPassword">Confirme sua senha:</label>
-            <input type="password" size="10" maxlength="8" placeholder="8 digitos"><br><br>
-            <label for="dataNascimento">Data nascimento:</label>
+            <input type="text" size="15" maxlength="15" placeholder="Nome Completo" name="v"/><br><br>
+            <input type="email" size="25" maxlength="25" placeholder="Email"><br><br>
+            <input type="password" size="10" maxlength="8" placeholder="Senha 8 digitos"><br><br>
+            <input type="password" size="10" maxlength="8" placeholder="Confirme sua senha"><br><br>
+            <label for="dataNascimento">Data nascimento</label>
             <input type="date"><br><br>
             <label for="Masculino">Masculino</label>
             <input type="radio" name="masc" id="masc" checked>
             <label for="Feminino">Feminino</label>
             <input type="radio" name="masc" id=femin><br><br>
             <input type="submit" value="Criar nova conta">
+            <footer id="rodape">
+	            <p>Copyright &copy; 2017</p>    
+	            <p><a title="ir github Túlio Lima" href="https://github.com/tuuhlima">Github Túlio Lima</a>,
+                <a title= "ir github Brayan Santos" href="https://github.com/brayansi">Github Brayan Santos</a></p>
+            </footer>
         </fieldset>
     </form>
-    <footer id="rodape">
-	            <p>Copyright &copy; 2017 - by Túlio Lima</p>
-	            <p><a href="https://www.facebook.com/tuuh.lima.9" target="_blank">Facebook</a></p>
-            </footer>
+                
 </body>
 </html>
