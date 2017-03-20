@@ -37,7 +37,7 @@ body{
 .field input[type="password"]{
     padding: 10px;
     width:90%;
-    font-size:14px; 
+    font-size:14px;
 }
 
 .field legend{
@@ -45,11 +45,16 @@ body{
     font-weight:bold; 
 }
 
-.field input[type="submit"]{
+.field input[type="submit"], .field input[type="button"]{
     padding:12px;
     width: 100%;
-    font-size:16px;  
+    font-size:16px;
+    border:0px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:15px;     
 }
+
 
 p,a,label{
     color: whitesmoke;
@@ -58,3 +63,4 @@ p,a,label{
 .field legend{
     color: whitesmoke;
 }
+
