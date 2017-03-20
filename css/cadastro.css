@@ -1,21 +1,22 @@
 h1{
     text-align: center;
+    color: whitesmoke;
 }
 
 h2{
     text-align: center;
+    color: whitesmoke;
 }
 
 body{
     font-family:sans-serif; 
-    width:100%;
-    height:100%;
     background:#eee;
-    background-image: url(biblioteca3.png);
+    background-image: url(books.jpg);
     background-repeat:no-repeat;
-    background-size:1370px 670px;
-    margin-right: 0px;
-    margin-left: 0px;     
+    background-size:100% 100%;
+    background-position:center;
+    background-attachment: fixed;
+    margin-left:-260px;   
 }
 
 .field{
@@ -51,5 +52,9 @@ body{
 }
 
 p,a,label{
+    color: whitesmoke;
+}
+
+.field legend{
     color: whitesmoke;
 }
