@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar livros</title>
-    <link rel="stylesheet" href="../css/cadastro.css"
-</head>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/stylebook.css">
 <body>
     <h1>Cadastrar Livros</h1>
+    
     <form>
         <fieldset  class="field">
             <legend>Informações Cadastrais</legend>
@@ -16,12 +17,32 @@
             <input type="text" size="15" maxlength="15" placeholder="Tema"/><br><br>
             <input type="text" size="15" maxlength="15" placeholder="Informações, Resumo, Sinopse, Notas Adicionais"/><br><br>
             
-                
-                
+            <section class="container">
+                <div>
+                    <select id="leftValues" size="6" multiple>
+                        <option>Ação</option>
+                        <option>Aventura</option>
+                        <option>Comédia</option>
+                        <option>Comédia Romântica</option>
+                        <option>Faroeste</option>
+                        <option>Guerra</option>
+                        <option>Suspense</option>
+                        <option>Musical</option>
+                        <option>Romance</option>
+                        <option>Terror</option>
+                    </select>
 
+                </div>
+                <div>
+                    <input type="button" id="btnLeft" value="&gt;&gt;" />
+                    <input type="button" id="btnRight" value="&lt;&lt;" />
+                </div>
+                <div>
+                    <select id="rightValues" size="6" multiple></select>
+                </div>
+            </section>
+            
 
-            
-            
             <footer id="rodape">
 	            <p>Copyright &copy; 2017</p>    
 	            <p><a title="ir github Túlio Lima" href="https://github.com/tuuhlima">Github Túlio Lima</a>,
