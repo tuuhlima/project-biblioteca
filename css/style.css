@@ -1,7 +1,8 @@
 
 h1{
-    margin-left: 345px;
     color:whitesmoke;
+    margin-left: 380px;
+    margin-top:-90px;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
     height: 100%;
     font-family: sans-serif;
     margin:10%auto;
-    background-image: url(books.jpg);
+    background-image: url(books2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center;
@@ -30,14 +31,20 @@ h2{
 }
 
 .container{
-    max-width: 250px;
-    margin-left:345px;
+    margin-left:350px;
+    max-width: 300px;
+    border: none;   
 }
 
 .container input[type="submit"]{
-    font-size: 16px;
-    width:100%;
-    padding:10px;
+    padding:8px;
+    width: 97%;
+    font-size:16px;
+    border:0px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:12px;
+    background-color:whitesmoke;
 }
 
 .container input[type="text"],
@@ -45,13 +52,17 @@ h2{
     width:90%; 
     padding: 15px 10px;
     border: 1px solid #ccc;
+    border-radius:6px;
+    background-color:whitesmoke;
 }
 
 .container input[type="submit"]:hover{
-    cursor: pointer;
+    font-size: 20px;
+    cursor: pointer; 
 }
 a{
-    color: whitesmoke;
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px blue; 
 }
 
 p{

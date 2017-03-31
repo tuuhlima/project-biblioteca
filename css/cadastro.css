@@ -23,6 +23,8 @@ body{
     max-width: 350px;
     text-align: center;
     margin: auto;
+    max-height:500px;
+    border:none; 
 }
 
 .field footer{
@@ -35,9 +37,10 @@ body{
 .field input[type="email"],
 .field input[type="text"],
 .field input[type="password"]{
-    padding: 10px;
+    padding: 9px;
     width:90%;
     font-size:14px;
+    border-radius:6px;
 }
 
 .field legend{
@@ -46,17 +49,18 @@ body{
 }
 
 .field input[type="submit"], .field input[type="button"]{
-    padding:12px;
+    padding:8px;
     width: 100%;
     font-size:16px;
     border:0px;
     border-radius:6px;
     cursor:pointer;
-    margin-top:15px;     
+    margin-top:12px;
+    background-color:whitesmoke;     
 }
 
 
-p,a,label{
+p,label{
     color: whitesmoke;
 }
 
@@ -64,3 +68,11 @@ p,a,label{
     color: whitesmoke;
 }
 
+.field input[type="submit"]:hover, .field input[type="button"]:hover{
+    font-size: 20px;
+}
+
+a{
+    color:whitesmoke;
+    text-shadow: 2px 2px 2px blue;
+}
