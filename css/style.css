@@ -36,15 +36,21 @@ body{
 .login-user, .login-pass{
     background: transparent;
     border-color:transparent;
-    display: inline-block;
     padding: 8px 0px;
     border: 2px;
     color: #ffffff;
 }
 .login-bot{
-    display: inline-block;
     padding: 5px 20px;        
 }
-.login-pas{
-    display: ;
+#nav{
+    list-style-type: none;
+    float: right;
+}
+
+#nav li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
 }
