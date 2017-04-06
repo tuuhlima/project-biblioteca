@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Pagina Inicial</title>
+    <title>Controler books</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-        <h1><p>Controller Books</p></h1>
-        <fieldset  class="container">
-            <div class="usuario">
-            <input type="text" id="usuario" size="20" maxlength="10" placeholder="Usuário"/>
+    <section>
+        <div class="container">
+            <div class="box">
+                <span class="logo"></span>
+                <div class="login">
+                    <input class=login-user type="text" class="login_form username" placeholder="Username" />
+                    <input class=login-pass type="text" class="login_form username" placeholder="Password" />
+                    <button class=login-but type="button" class="login_submit">Sign in</button>
+                </div>
             </div>
-            <br>
-            <div class="senha">
-                <input type="password" id="senha" size="20" maxlength="10" placeholder="Senha"><br><br>
-                <input type="submit" value="Login">
-            </div>
-            <p><a title="ir criar nova conta" href="cadastros/cadastrousuario.html">Ainda não possuiu uma conta?</a></p>
-                <footer id="rodape">
-	            <p>Copyright &copy; 2017</p>    
-	            <p><a title="ir github Túlio Lima" href="https://github.com/tuuhlima">Github Túlio Lima</a>
-                <a title= "ir github Brayan Santos" href="https://github.com/brayansi">Github Brayan Santos</a></p>
-            </footer>    
-        </fieldset>
+            <fieldset class="box-cadastro">
+                <ul>
+                    <li><input type="text" size="50" maxlength="15" placeholder="Username" name="v" /></li>
+                    <li><input type="text" size="50" maxlength="15" placeholder="Nome Completo" name="v" /></li>
+                    <li><input type="email" size="50" maxlength="25" placeholder="Email"></li>
+                    <li><input type="password" size="50" maxlength="8" placeholder="Senha 8 digitos"></li>
+                    <li><input type="password" size="50" maxlength="8" placeholder="Confirme sua senha"></li>
+                    <li><label for="dataNascimento">Data nascimento</label> <input type="date" placeholder="DD/MM/YY"></li>
+                </ul>
+            </fieldset>
+        </div>
+    </section>
+
 </body>
+
 </html>
