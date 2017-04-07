@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    height: 70px;
+    display: block;
 }
 
 .logo{
@@ -24,38 +24,31 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+
+}
+.nav{
+    margin-left: 10px;
+    right: 10px;
+}
+.nav ul {
+    display: inline-flex;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.nav ul li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
 }
 
 .login{
-    height: 70px;
-}
-
-.login-user, .login-pass{
+    display: block;
+    float: left;
     background: transparent;
     border-color:transparent;
+    color: #ffffff;
     padding: 8px 0px;
-    border: 2px;
-    color: #ffffff;
+    /*border: 2px;
+    color: #ffffff;*/
 }
-.login-bot{
-    padding: 5px 20px;        
-}
-.nav{
-    list-style-type: none;
-    float: right;
-    padding: 18px;
-    margin-bottom: 0px;
-}
-
-.nav li {
-    position: relative;
-    float: left;
-    margin: 15px;
-    padding: 0;
-}
-
-.nav i{
-    color: #ffffff;
-    text-align:left;
-}
-
