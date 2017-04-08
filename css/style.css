@@ -6,11 +6,18 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+
 .fundologin{
-    background-color: black;
+    background-color: transparent;
     width: 100%;
     height: 70px;
     background-attachment: fixed;
+    transition: 0.2s ease-in-out;
+}
+
+.fundologin:hover{
+    background-color:rgba(0,0,0,0.3);
+    transition: 0.2s ease-in-out;
 }
 
 .container{
@@ -25,6 +32,11 @@ body{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    width: 420px;
+    transition: 0.2s ease-in-out;
 }
 
 .login{
@@ -35,9 +47,10 @@ body{
     width: 70px;
     transition: width 0.4s ease-in-out;
 }
+
 .loginAnimation:focus,.loginAnimation:active{
     transition: width 0.4s ease-in-out;
-    width: 170px;
+    width: 200px;
 }
 
 .botton{
@@ -65,11 +78,13 @@ body{
     right: 10px;
     float: right;
 }
+
 .nav ul {
     display: inline-flex;
     margin: 20px 0 0 0;
     padding: 0;
 }
+
 .nav li {
     display: inline-flex;
     margin: 0;
