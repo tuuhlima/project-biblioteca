@@ -135,6 +135,7 @@ body{
 .cadastro h2{
     text-align: center;
     color: #ffffff;
+
 }
 
 .cadastro-imput{
@@ -143,6 +144,32 @@ body{
     border-radius: 10px;
     width: 300px;
     height: 35px;
+}
+
+.radio{
+    display: inline-flex;
+    margin-top: 15px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    
+}
+.radio input{
+    width:  15px;;
+    height: 24px;
+    position: relative;
+    top: 6px;
+}
+fieldset {
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    color: #ffffff;
 }
 
 
