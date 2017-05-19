@@ -4,7 +4,10 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    width: 100%;
+}
+
+.container {
+    display: block;
     height: 100%;
 }
 /*fundo*/
@@ -14,38 +17,35 @@ body{
     height: 10ex;
     border-bottom: 0.15em solid red;
 }
-.container{
-   display: block;
-    height: 100%;
-}
 /*logo*/
 .logo{
     height: 100%;
 }
+
 .logo img{
+    margin-top: 5%;
     width: 100%;
-    height: 100%;
 }
 /*login*/
 .nav{
     float: right;
+    height: 100%;
 }
 
 .nav ul {
+    padding-top: 20px;
     display: inline-flex;
-    margin: 20px 0 0 0;
-    padding: 0;
+    margin: 0;
 }
 
 .nav li {
     display: inline-flex;
     margin: 0;
-    padding-left: 5px;
-    text-indent: -9999px;
+    padding-left: 0.2em;
+    text-indent: 0.5em;
 }
 .nav i {
     padding: 5px;
-    text-align: center;
     color: #ffffff;
 }
 .login{
@@ -55,6 +55,7 @@ body{
     color: #ffffff;
     border-bottom: 1px solid #ccc;
     width: 70px;
+    transition: width 0.4s ease-in-out;
 }
 
 .loginAnimation:focus,.loginAnimation:active{
