@@ -93,93 +93,16 @@ body{
 
 .cadastro{
     margin: 0;
-    margin-top: 70px;
+    margin-top: 5%;
     float: right;
-    padding: 20px;
-    padding-bottom: 40px;
-    border-radius: 5px;
+    padding: 2%;
+    border-radius: 5%;
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0px 5px rgb(255, 255, 255);
     color: white;
 }
 
-.cadastro ul {
-    display: block;
-    padding: 0;
-}
 
-.cadastro li {
-    display: block;
-    margin: 0;
-    padding-left: 5px;
-    text-align: center;
-}
-
-.cadastro h2{
-    text-align: center;
-    color: #ffffff;
-
-}
-
-.cadastro-imput{
-    color: inherit;
-    font: inherit; 
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #9e9e9e;
-    border-radius: 0;
-    outline: none;
-    height: 50px;
-    width: 100%;
-    margin: 0 0 15px 0;
-    padding: 0;
-    box-shadow: none;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    transition: all .3s;
-    transition: width 0.4s ease-in-out;
-}
-.cadastro-imput:focus::placeholder{
-    position: absolute;
-    font-size: 0.5em;
-    color: red;
-    
-}
-.cadastro-imput:focus{
-    border-bottom: 1px solid red;
-    font-size: 1.4em;
-    cursor: text;
-}
-
-.radio{
-    display: inline-flex;
-    margin-top: 15px;
-    width: 100%;
-    color: #ffffff;
-    font-size: 20px;
-    
-}
-.radio input{
-    width:  15px;;
-    height: 24px;
-    position: relative;
-    top: 6px;
-}
-
-fieldset {
-    padding-bottom: 15px;
-    padding-right: 7px;
-    -webkit-padding-start: 0.75em;
-    -webkit-padding-end: 0.75em;
-    -webkit-padding-after: 0.625em;
-    min-width: -webkit-min-content;
-    border-width: 2px;
-    border-style: groove;
-    border-color: threedface;
-    border-image: initial;
-    color: #ffffff;
-}
 
 
 
