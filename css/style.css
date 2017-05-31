@@ -1,5 +1,4 @@
 body{
-    background:url(../imagens/book.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -96,7 +95,7 @@ body{
 .product{
     text-align: center;
     display: block;
-    width: 68%
+    width: 100%
 }
 
 .product h3 {
@@ -110,7 +109,6 @@ body{
 /* Hover Card 
 .......................................................................*/
 div.catCard {
-  border: solid 5px white;
   background-color: white;
   width: 310px;
   height: 400px;
@@ -120,10 +118,8 @@ div.catCard {
 }
 div.lowerCatCard {
   position: absolute; 
-  background: #ea8a8a;
   padding: 5px 5px; 
   height: 90px;
-  overflow: auto;
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
   -o-transition:      all 0.6s ease;
@@ -134,6 +130,7 @@ div.lowerCatCard:hover {
   bottom: 0;
   height: 390px;
   overflow: auto;
+  background-color:white;
 }
 div.catCard  div.lowerCatCard { 
   left: 0; 
@@ -160,7 +157,7 @@ ul.catCardList {
 }
 #catCardButton {
   position: sticky;
-  width: 190px;
+  width: 305px;
   bottom: 5px;
   -webkit-transition: all 0.6s ease;
   -moz-transition:    all 0.6s ease;
