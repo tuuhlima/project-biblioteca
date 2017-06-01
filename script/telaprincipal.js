@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 
     //Login
-    $('#frmCadastro').click(function(event){
+    $('#frmCadastro').submit(function(event){
 		event.preventDefault();
 		var contato = {
 			nome: $('#txtNome').val(),
