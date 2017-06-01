@@ -9,6 +9,9 @@ $(document).ready(function(){
 
     }
     //Pegar as informaçães
+
+
+    //Login
     $('#frmCadastro').click(function(event){
 		event.preventDefault();
 		var contato = {
@@ -17,6 +20,9 @@ $(document).ready(function(){
         }
         console.log(contato);
     });
+
+    //comprar;
+    //add carrinho;
 
 
 
