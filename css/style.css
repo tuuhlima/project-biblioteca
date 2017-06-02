@@ -1,4 +1,5 @@
 body{
+    background-color:white;   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -118,7 +119,6 @@ body{
 /* Hover Card 
 .......................................................................*/
 div.catCard {
-  background-color: white;
   width: 310px;
   height: 400px;
   display: block;

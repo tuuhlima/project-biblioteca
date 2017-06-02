@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Controler books</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="script/telaprincipal.js"></script>
+    <link rel="stylesheet" href="css/960.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/telaCadastro.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="fundologin">
+        <header class="container_16 container">
+            <div class="grid_6 logo">
+                <a href="telaprincipal.html">
+                    <img src="imagens/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="grid_6.omega prefix_16 nav">
+                <form class="frmLogin">
+                    <i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i>
+                    <input class="txtNome login loginAnimation" type="text" placeholder="User Name" required>
+                    <i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+                    <input class="txtSenha login loginAnimation" type="password" placeholder="Password" required>
+                    <div class="cadastrar">
+                        <input type="submit" class="botton botton-login  bottonAnimation" value="Login">
+                        <a href="telaCadastro.html">Cadastre-se</a>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </section>
+    <section class="container_16 c-contain">
+        <section class="grid_8 c-centered">
+            <form class="frmCadastro">
+                <div class="styled-input">
+                    <input class="cadastroNome" type="text" required />
+                    <label>User name</label>
+                    <span></span>
+                </div>
+
+                <div class="styled-input">
+                    <input class="cadastroEmail" type="text"required />
+                    <label>Email</label>
+                    <span></span>
+                </div>
+
+                <div class="styled-input">
+                    <input class="cadastroSenha" type="password" required />
+                    <label>Senha</label>
+                    <span></span>
+                </div>
+
+                <div class="styled-input">
+                    <input class="cadastroConfSenha" type="password" required />
+                    <label>Confirme a Senha</label>
+                    <span></span>
+                </div>
+
+                <button class="botton botton-cadastro" type="submit">Cadastrar</button>
+
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>

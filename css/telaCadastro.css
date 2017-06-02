@@ -1,0 +1,121 @@
+   body{
+       background-image: url(../imagens/book.jpg);
+   }
+
+  .c-centered{
+    text-align: center;
+    display: block;
+    float: right;
+  }
+
+  .c-centered p{
+    color: red;
+    font-family: CantataOne-Regular;
+    font-size: 1em;
+    margin-top: 2%;
+}
+
+    .c-centered h1 {
+      font-family: georgia;
+      color: red;
+      font-size: 2.5em;
+      font-weight: bolder;
+      margin-top: 5%;
+  }
+/*botton*/
+
+.botton-cadastro {
+    width: 160px;
+    height: 50px;
+}
+
+
+/* input starts here */
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 1em;
+  color: red;
+  top: -2.25rem;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.styled-input {
+  float: none;
+  width: 75.3333%;
+  margin: 2rem 0 1rem;
+  position: relative;
+  margin: 5% auto;
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+  pointer-events: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+.styled-input.wide {
+  width: 100%;
+}
+
+.styled-input input,
+.styled-input textarea {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  border-bottom: 1px solid red !Important;
+  background-color: transparent;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  left: 0;
+  border-left: none;
+  right: 0;
+}
+
+input ~ span,
+textarea ~ span {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 106%;
+  -webkit-transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
