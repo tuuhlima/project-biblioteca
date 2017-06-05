@@ -4,23 +4,35 @@ $(document).ready(function(){
     var cadastro={
         contas: [],
         adicionarConta: function(conta){
-            var emailValido = /^(\w+[._-]?)+@\w+.+(\w+[.]?)+$/;
-            
-            if(conta.nome){
-                this.contas.push(conta);
-                this.salvar();
+            this.pegarContas();
+            for (var indice in this.contas) {
+                if(this.contas[indice].nome === conta.nome){
+                    console.log(this.contas[indice]);
+                    console.log(this.conta.nome);
+                }
+            }  
+            if(conta){
+                if(conta.senha === conta.confSenha){
+                    this.contas.push(conta);
+                    //this.salvar();
                 alert('Cadastro realizado com sucesso');
+                }else{
+                    throw new Error('Senha não confere');
+                }
             }else{
                 throw new Error('Erro ao add Contato');
             }
-
-            
+                      
         },
 
         salvar: function () {
 			var contasString = JSON.stringify(this.contas);
 			localStorage.contas = contasString;
 		},
+
+        pegarContas: function() {
+            this.contas = JSON.parse(localStorage.contas);
+        },
 
     
 
