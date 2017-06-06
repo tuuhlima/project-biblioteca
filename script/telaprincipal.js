@@ -10,7 +10,7 @@ $(document).ready(function(){
                     console.log(this.contas[indice]);
                     console.log(this.conta.nome);
                 }
-            }  
+            }
             if(conta){
                 if(conta.senha === conta.confSenha){
                     this.contas.push(conta);
