@@ -59,6 +59,8 @@ $(document).ready(function(){
         }
         try{
             cadastro.verificaLogin(contato);
+            $('.txtNome').val("");
+            $('.txtSenha').val("");
         }catch(e){
             alert(e.message);
         }
@@ -75,14 +77,15 @@ $(document).ready(function(){
         }
         try{
             cadastro.adicionarConta(conta);
+            $('.cadastroNome').val("");
+            $('.cadastroEmail').val("");
+            $('.cadastroSenha').val("");
+            $('.cadastroConfSenha').val("");
         }catch(e){
             alert(e.message);
         }
 
-        $('.cadastroNome').val("");
-        $('.cadastroEmail').val("");
-        $('.cadastroSenha').val("");
-        $('.cadastroConfSenha').val("");
+        
         
     });
 
