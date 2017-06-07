@@ -7,14 +7,13 @@ $(document).ready(function(){
             this.pegarContas();
             for (var indice in this.contas) {
                 if(this.contas[indice].nome === conta.nome){
-                    console.log(this.contas[indice]);
-                    console.log(this.conta.nome);
-                }
+                    throw new Error('Usuário já cadastrado');
+                }  
             }
             if(conta){
                 if(conta.senha === conta.confSenha){
                     this.contas.push(conta);
-                    //this.salvar();
+                    this.salvar();  
                 alert('Cadastro realizado com sucesso');
                 }else{
                     throw new Error('Senha não confere');
@@ -25,6 +24,20 @@ $(document).ready(function(){
                       
         },
 
+        verificaLogin: function(contato){
+            var aux = 0;
+             this.pegarContas();
+             for (var indice in this.contas) {
+                if(this.contas[indice].nome === contato.nome && this.contas[indice].senha === contato.senha){
+                   alert('Login realizado');
+                   aux = 1;
+                }
+            }
+            if(aux != 1){
+                throw new Error('Erro ao entrar com Usuário e senha');
+            }
+        },
+
         salvar: function () {
 			var contasString = JSON.stringify(this.contas);
 			localStorage.contas = contasString;
@@ -33,9 +46,6 @@ $(document).ready(function(){
         pegarContas: function() {
             this.contas = JSON.parse(localStorage.contas);
         },
-
-    
-
     }
     //Pegar as informaçães
 
@@ -47,7 +57,11 @@ $(document).ready(function(){
 			nome: $('.txtNome').val(),
             senha: $('.txtSenha').val(),
         }
-        console.log(contato);
+        try{
+            cadastro.verificaLogin(contato);
+        }catch(e){
+            alert(e.message);
+        }
     });
     
     //cadastros
@@ -64,6 +78,11 @@ $(document).ready(function(){
         }catch(e){
             alert(e.message);
         }
+
+        $('.cadastroNome').val("");
+        $('.cadastroEmail').val("");
+        $('.cadastroSenha').val("");
+        $('.cadastroConfSenha').val("");
         
     });
 
