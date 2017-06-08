@@ -46,7 +46,7 @@ body{
     height: 100%;
 }
 
-.nav form {
+.frmLogin {
     padding-top: 4px;
     display: inline-flex;
     margin-right: 5px;;
@@ -233,6 +233,10 @@ div.startingPrice {
 }
 .button:hover {
 	color: #fff;
+}
+
+.text{
+  display: none;
 }
 
 

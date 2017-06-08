@@ -4,7 +4,6 @@ $(document).ready(function(){
     var cadastro={
         contas: [],
         adicionarConta: function(conta){
-            this.pegarContas();
             for (var indice in this.contas) {
                 if(this.contas[indice].nome === conta.nome){
                     throw new Error('Usuário já cadastrado');
@@ -29,7 +28,9 @@ $(document).ready(function(){
              this.pegarContas();
              for (var indice in this.contas) {
                 if(this.contas[indice].nome === contato.nome && this.contas[indice].senha === contato.senha){
-                   alert('Login realizado');
+                    alert('Login realizado');
+                    $(".frmLogin").css("display", "none");
+                    $(".text").css("display", "block");
                    aux = 1;
                 }
             }
