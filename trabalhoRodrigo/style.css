@@ -1,0 +1,18 @@
+body{
+   width: 30%;
+   margin: auto;
+}
+.container{
+    text-align: center;
+    
+}
+
+.formulario input{
+    font-size: 20px;
+    padding: 10px;
+    margin: 7px;
+}
+.formulario label {
+    text-align: left;
+}
+
