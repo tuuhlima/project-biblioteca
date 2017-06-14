@@ -22,7 +22,13 @@
             }
         },
 
-
+        listar: function () {
+			this.pegarContatosSalvos();
+			for (indice in this.contatos) {
+				var contato = this.contatos[indice];
+				criarNovoContato(contato);
+			}
+		},
         salvar: function () {
 			var contatosString = JSON.stringify(this.contatos);
 			localStorage.contatos = contatosString;
@@ -32,7 +38,7 @@
 		},     
     }
      
-    document.getElementById('myform').onsubmit = function mysubmit(event){
+    document.getElementById('myform').onsubmit = function pegarDados(event){
         event.preventDefault();
          var contato = {
             nome: document.getElementById('nome').value,
@@ -45,8 +51,19 @@
             alert(e.message);
         }      
     }
-    
-    
-    
+
+    var criarNovoContato = function (contato){
+        var listTable = document.getElementById('listTable');
+        var table = document.createElement('table');
+        var tr = document.createElement('tr');
+        var thnome = document.createElement('th');
+        var themail = document.createElement('th');
+        var tdnome = document.createElement('td');
+        var tdnome = document.createElement('td');
+        
+        console.log(contato.nome);
+
+    }
+    agenda.listar(); 
 })();
 
