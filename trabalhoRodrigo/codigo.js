@@ -12,10 +12,13 @@
                     }
                 }
                 this.contatos.push(contato);
-                alert('Cadastro Realizado com Sucesso');
                 this.salvar();
+                alert('Cadastro Realizado com Sucesso');
             }else{
                 throw new Error('Erro ao Realizar Cadastro');
+            }
+            for (var indice in this.contatos) {
+                console.log(this.contatos[indice]);
             }
         },
 
@@ -29,8 +32,7 @@
 		},     
     }
      
-    var btn = document.getElementById('myform');
-    btn.onsubmit = function mysubmit(event){
+    document.getElementById('myform').onsubmit = function mysubmit(event){
         event.preventDefault();
          var contato = {
             nome: document.getElementById('nome').value,
@@ -47,17 +49,4 @@
     
     
 })();
-
-function btn(){
-    var btn = document.getElementById('bntCadastrar');
-    btn.onclick = function(){
-        var nome = document.getElementById('nome');
-        var email = document.getElementById('email');
-        var telefone = document.getElementById('telefone');
-
-       
-        
-        agenda.adicionar(contato);
-    };
-}
 
