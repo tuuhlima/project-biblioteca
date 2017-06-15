@@ -3,7 +3,8 @@
     var agenda = {
         contatos: [],
         adicionar: function (contato) {
-            if ("undefined" === typeof variable) {
+            if ("undefined" === typeof localStorage.contatos) {
+                alert('ola');
                 this.contatos.push(contato);
                 this.salvar();
                 alert('Cadastro Realizado com Sucesso');
@@ -23,7 +24,7 @@
                     throw new Error('Erro ao Realizar Cadastro');
                 }
             }
-        this.listar();
+            criarNovoContato(contato);
         },
 
         listar: function () {
