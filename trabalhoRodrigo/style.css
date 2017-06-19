@@ -1,17 +1,29 @@
 body{
-    background-color: slategray;
+    background-color: white;
+    background-image: url(../imagens/agenda.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 960px;
     margin: auto;
-    color: white;
+    color: black;
 }
 .container{
+    padding-top: 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
     width: 50%;
     text-align: center;
     margin-left: 25%;
 }
 
+#logo{
+    padding-top: 150px;
+}
+
 .container02{
     margin-top: 30px;
+    margin-left: 50px;
 }
 
 .formulario input{

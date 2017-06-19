@@ -1,10 +1,11 @@
 
+
+
 (function () {
     var agenda = {
         contatos: [],
         adicionar: function (contato) {
             if ("undefined" === typeof localStorage.contatos) {
-                alert('ola');
                 this.contatos.push(contato);
                 this.salvar();
                 alert('Cadastro Realizado com Sucesso');
@@ -75,8 +76,8 @@
         tdnome.appendChild(nome);
         tdemail.appendChild(email);
         tdtelefone.appendChild(telefone);
-
     }
+    
     agenda.listar();
 })();
 
