@@ -3,6 +3,7 @@
 
 (function () {
     var agenda = {
+        nome :"agenda de contatos",
         contatos: [],
         adicionar: function (contato) {
             if ("undefined" === typeof localStorage.contatos) {
