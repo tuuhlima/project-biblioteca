@@ -8,7 +8,7 @@
             if ("undefined" === typeof localStorage.contatos) {
                 this.contatos.push(contato);
                 this.salvar();
-                alert('Cadastro Realizado com Sucesso');
+                limpar();
             } else {
                 this.pegarContatosSalvos();
                 if (contato) {
@@ -20,7 +20,7 @@
                     }
                     this.contatos.push(contato);
                     this.salvar();
-                    alert('Cadastro Realizado com Sucesso');
+                    limpar();
                 } else {
                     throw new Error('Erro ao Realizar Cadastro');
                 }
@@ -56,6 +56,12 @@
         } catch (e) {
             alert(e.message);
         }
+    }
+
+    var limpar = function(){
+        document.getElementById('nome').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('telefone').value = "";
     }
 
     var criarNovoContato = function (contato) {
